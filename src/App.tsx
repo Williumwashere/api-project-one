@@ -11,7 +11,6 @@ function App() {
   useEffect(() => {
     chuckFetch();
   }, []);
-
   const chuckFetch = async () => {
     const response = await axios.get<Joke>(
       "https://api.api-ninjas.com/v1/chucknorris?",
